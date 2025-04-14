@@ -111,7 +111,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>.\Utils\DirectXTK-main\Bin\Desktop_2022\x64\Debug;.\Utils.\Effeksser170e.\lib;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.4\lib\vs2022\x64\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>.\Utils\DirectXTK-main\Bin\Desktop_2022\Win32\Debug;.\Utils.\Effeksser170e.\lib;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.4\lib\vs2022\x64\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>d3d11.lib;dxgi.lib;DirectXTK.lib;xinput.lib;xaudio2.lib;winmm.lib;Effekseerd.lib;EffekseerRendererDX11d.lib;LLGId.lib;libxml2-mt.lib;libfbxsdk-mt.lib;zlib-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <FxCompile>
