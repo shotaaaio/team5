@@ -128,4 +128,6 @@ private:
     Sprite* searchImage = nullptr;
 
     bool search_b;
+
+    Sprite* tutaText = nullptr;
 };
