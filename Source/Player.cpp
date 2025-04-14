@@ -39,6 +39,8 @@ Player::Player()
     clearImage = new Sprite(DeviceManager::instance()->getDevice(), L".\\Resources\\Font\\clear.png");
 
     searchImage = new Sprite(DeviceManager::instance()->getDevice(), L".\\Resources\\Image\\search.png");
+
+    tutaText = new Sprite(DeviceManager::instance()->getDevice(), L".\\Resources\\Font\\tutatext.png");
 }
 
 // デストラクタ
@@ -98,6 +100,12 @@ Player::~Player()
     {
         delete clearImage;
         clearImage = nullptr;
+    }
+
+    if (tutaText != nullptr)
+    {
+        delete tutaText;
+        tutaText = nullptr;
     }
 }
 
@@ -285,7 +293,7 @@ void Player::render(ID3D11DeviceContext* dc)
         
         if (clear_b){
             if(clearTime<=1) clearTime += 0.01f;
-            clearImage->render(dc,
+            tutaText->render(dc,
                 440, 310, 400, 76,
                 1, 1, 1, clearTime,
                 0,
@@ -302,6 +310,13 @@ void Player::render(ID3D11DeviceContext* dc)
             0, 0, 2562, 960
         );
     }*/
+
+    tutaText->render(dc,
+        440, 310, 400, 45,
+        1, 1, 1, 1,
+        0,
+        0, 0, 814, 45
+    );
 }
 
 // デバッグ用の描画
